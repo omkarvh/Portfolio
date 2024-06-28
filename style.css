@@ -1,21 +1,63 @@
 body{
     background-color: black;
     color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
+
+
+
+
+.boxer{
+border-radius: 0px;
+background: #0c0b14;
+box-shadow:  20px 20px 60px #f0ad4e,
+             -20px -20px 60px #f0ad4e;
+
+}
+
+
+
+
 /*nav bar styling*/
 .navbar{
+ 
+ background: transparent;
+ backdrop-filter: blur(10px);
   font-size: larger;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+.nav-link{
+  color: #f0ad4e;
 }
 /*nav bar styling end*/
 
 /*button Hire*/
-.Hire{
+/*.Hire{
   font-family: 'Times New Roman', Times, serif;
   border-radius: 10px;
   padding: 10px;
 }
 /*button Hire ends*/
 
+button {
+  color: #f0ad4e;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #050404;
+  cursor: pointer;
+  border: 1px solid #030303;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #f0ad4e, -6px -6px 12px #f0ad4e;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #ace99d, inset -4px -4px 12px #40db40;
+}
 
 /* icons list */
 .fotterUl{
@@ -88,6 +130,7 @@ body{
     text-align: center;
     opacity: 0;
     transition: opacity .35s ease;
+
   }
   
   .button a {
@@ -128,4 +171,9 @@ body{
 }
 .Social-li a{
   color: aliceblue;
+}
+
+/*form*/
+
+.Fname{
 }

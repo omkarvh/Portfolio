@@ -5,528 +5,451 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--Fonts end-->
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Css styling-->
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
   </head>
   <body>
-
-
-    
-        <!--Navbar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark  ">
-
-    
-          <div class="container-fluid">
-          
-            <a class="navbar-brand text-warning " href="#"><h1>Portfolio</h1></a>
-          
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Education">Education</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Contact">Contact</a>
-                </li>
-              </ul>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </nav>
+        </div>
+    </nav>
+<!--All good-->
 
-
-
-            <!--Navbar ends-->
-
-            <!--Naming intro-->
-
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-      <div class="row">
+    <div class="container-fluid" style="margin-top: 80px;">
+        <div class="row  boxer">
+    
+            <div class="col-sm-12 col-md-6 ">
+                <img class="img-fluid" src="images/Profile pics/p1.png" alt="">
+            </div>
+    
+            <div class="col-sm-12 col-md-6 d-flex align-items-center Naming">
+    
+                <span class="">
+                <h1 class=" text-warning">Hello,</h1>
+                <h2 class="Fname">I am <span class="text-warning">Omkar Hiremath</span></h2>
+                
+                <h3 class=""> <u class="text-warning">Full Stack Developer</u></h3>
+                <p> Enthusiastic and results-driven IT professional with a solid background in system administration and a
+                    newfound passion for web development. Proven commitment to continuous learning, adaptability in
+                    dynamic work environments, and a track record of optimizing network performance and crafting user
+                   friendly websites.</p>
+                   <button class="Hire mt-2 font-weight-bold" onclick="window.location.href = '#Contact';">Hire Me!</button>
   
-          <div class="col-sm-12 col-md-6 ">
-              <img src="images/Profile pics/p1.png" alt="">
-          </div>
+                  </span>
+            </div>
+           
+        </div>
   
-          <div class="col-sm-12 col-md-6 d-flex align-items-center">
-  
-              <span class="">
-              <p class="font-weight-bold text-warning">Hello,</p>
-              <h1>I am <span class="text-warning">Omkar Hiremath</span></h1>
-              
-              <h3 class=""> <u>Full Stack Developer</u></h3>
-              <p> Enthusiastic and results-driven IT professional with a solid background in system administration and a
-                  newfound passion for web development. Proven commitment to continuous learning, adaptability in
-                  dynamic work environments, and a track record of optimizing network performance and crafting user
-                 friendly websites.</p>
-              <button class="Hire mt-2 bg-warning font-weight-bold"> Hire Me !</button>
-          </span>
+    </div>
+    <!--All good-->
+
+    <!--Icons-->
+
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row">
+        <div class="col-12">
+            <ul class="fotterUl d-flex justify-content-center">
+                <li class="IcnLi">
+                    <img class="icon-img img-fluid" src="images/Profile pics/Icons/html.png" alt="">
+                </li>
+                <li class="IcnLi">
+                    <img class="icon-img img-fluid" src="images/Profile pics/Icons/css.png" alt="">
+                </li>
+                <li class="IcnLi">
+                    <img class="icon-img img-fluid" src="images/Profile pics/Icons/Bootstrap.png" alt="">
+                </li>
+                <li class="IcnLi">
+                    <img class="icon-img img-fluid" src="images/Profile pics/Icons/javascript.png" alt="">
+                </li>
+                <li class="IcnLi">
+                    <img class="icon-img img-fluid" src="images/Profile pics/Icons/jquery.png" alt="">
+                </li>
+                <li class="IcnLi">
+                    <img class="icon-img img-fluid" src="images/Profile pics/Icons/exp2.jpg" alt="">
+                </li>
+                <li class="IcnLi">
+                    <img class="icon-img img-fluid" src="images/Profile pics/Icons/Node.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <!--Icons End-->
+
+  <!--All good-->
+
+  <!--Skills-->
+
+  <div class="container-fluid" id="Skills">
+    <h3 class="m-5 text-warning" >Technical Skills</h3>
+    <div class="row">
+        <div class="col-12"><h6>"Committed to continuous improvement, with a proactive approach to acquiring new skills and staying abreast of industry advancements."</h6></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <!--Start Animated Progress Bar-->
+
+            <div class="border border-success p-3  m-2 ">
+            <P>HTML</P>
+            <div class="progress">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+              </div>
+            </div>
+            <div class="border border-warning p-3  m-2">
+                <P>Css</P>
+                <div class="progress">
+                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                  </div>
+                </div>
+
+                <div class="border border-success p-3  m-2">
+                    <P>Bootstrap 5</P>
+                    <div class="progress">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                      </div>
+                    </div>
+
+
+                    <div class="border border-primary p-3  m-2">
+                        <P>Javascript</P>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+                          </div>
+                        </div>
+
+
+                        
+           <!--End Animated Progress Bar-->
+        </div>
+        <div class="col-lg-6 col-sm-12">
+           <!--Start Animated Progress Bar-->
+
+           <div class="border border-primary p-3  m-2">
+            <P>Jquery</P>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+              </div>
+            </div>
+            <div class="border border-info p-3 m-2">
+                <P>Node Js</P>
+                <div class="progress">
+                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 42%">42%</div>
+                  </div>
+                </div>
+
+                <div class="border border-danger p-3  m-2">
+                    <P>Express Js</P>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 49%">49%</div>
+                      </div>
+                    </div>
+
+
+                    <div class="border border-warning p-3  m-2">
+                        <P>Git</P>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 35%">35%</div>
+                          </div>
+                        </div>
+
+
+                        
+           <!--End Animated Progress Bar-->
+          
+        </div>
+    </div>
+</div>
+
+<!--Certifications start-->
+<div class="container-fluid">
+
+  <h3 class="m-5 text-warning" id="Certifications">Certifications</h3>
+  <div class="row">
+      <div class="col-lg-4 col-sm-6">
+          <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
+              <img src="/images/Certificates/AI.jpg" class="card-img-top img-fluid " alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Microsoft Certificate of Completion</h5>
+                  <p class="card-text">Career Essentials in Generative AI by Microsoft and LinkedIn</p>
+                  <a href="https://www.linkedin.com/learning/certificates/c9c1444db3700ebfc0d2f8c07f1d72381ffb97b5233d126688c592bc64b0b55d?u=2110905"target="_blank"
+                      class="btn btn-primary">Certificate link</a>
+              </div>
           </div>
-         
       </div>
 
-  </div>
+      <div class="col-lg-4 col-sm-6">
+          <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
+              <img src="/images/Certificates/Excel.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Udemy Certificate of Completion </h5>
+                  <p class="card-text">Microsoft Excel - Excel from Beginner to Advanced </p>
+                  <a href="https://www.udemy.com/certificate/UC-de5dce73-a9c4-4cc6-bec7-a04905d2bbe7/" target="_blank"
+                      class="btn btn-primary">Certificate link</a>
+              </div>
+          </div>
+      </div>
 
-            <!--Naming intro ends-->
-<!--Icons-->
-
-<div class="container d-flex justify-content-center">
-  <div class="row">
-      <div class="col-12">
-          <ul class="fotterUl d-flex justify-content-center">
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/html.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/css.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/Bootstrap.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/javascript.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/jquery.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/exp2.jpg" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/Node.png" alt="">
-              </li>
-          </ul>
+      <div class="col-lg-4 col-sm-6">
+          <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
+              <img src="/images/Certificates/Goldmen Sacs.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Goldman Sachs Certificate of Completion</h5>
+                  <p class="card-text">Goldman Sachs Engineering Job Simulation</p>
+                  <a href="https://www.linkedin.com/learning/certificates/c9c1444db3700ebfc0d2f8c07f1d72381ffb97b5233d126688c592bc64b0b55d?u=2110905" target="_blank"
+                      class="btn btn-primary">Certificate link</a>
+              </div>
+          </div>
       </div>
   </div>
 </div>
-<!--Icons End-->
 
-<!--Skills-->
-
-            <div class="container">
-              <h3 class="m-5 text-warning" id="Skills">Technical Skills</h3>
-              <div class="row">
-                  <div class="col-12"><h6>"Committed to continuous improvement, with a proactive approach to acquiring new skills and staying abreast of industry advancements."</h6></div>
-              </div>
-              <div class="row">
-                  <div class="col-lg-6">
-                      <!--Start Animated Progress Bar-->
-          
-                      <div class="border border-success p-3  m-2">
-                      <P>HTML</P>
-                      <div class="progress">
-                          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
-                        </div>
-                      </div>
-                      <div class="border border-warning p-3  m-2">
-                          <P>Css</P>
-                          <div class="progress">
-                              <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
-                            </div>
-                          </div>
-          
-                          <div class="border border-success p-3  m-2">
-                              <P>Bootstrap 5</P>
-                              <div class="progress">
-                                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                </div>
-                              </div>
-          
-          
-                              <div class="border border-primary p-3  m-2">
-                                  <P>Javascript</P>
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
-                                    </div>
-                                  </div>
-          
-          
-                                  
-                     <!--End Animated Progress Bar-->
-                  </div>
-                  <div class="col-lg-6">
-                     <!--Start Animated Progress Bar-->
-          
-                     <div class="border border-primary p-3  m-2">
-                      <P>Jquery</P>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
-                        </div>
-                      </div>
-                      <div class="border border-info p-3 m-2">
-                          <P>Node Js</P>
-                          <div class="progress">
-                              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 42%">42%</div>
-                            </div>
-                          </div>
-          
-                          <div class="border border-danger p-3  m-2">
-                              <P>Express Js</P>
-                              <div class="progress">
-                                  <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 49%">49%</div>
-                                </div>
-                              </div>
-          
-          
-                              <div class="border border-warning p-3  m-2">
-                                  <P>Git</P>
-                                  <div class="progress">
-                                      <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 35%">35%</div>
-                                    </div>
-                                  </div>
-          
-          
-                                  
-                     <!--End Animated Progress Bar-->
-                    
-                  </div>
+<div class="container-fluid mt-5">
+  <div class="row">
+      <div class=" col-lg-4 col-sm-6">
+          <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
+              <img src="/images/Certificates/Server 2019.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Udemy Certificate of Completion</h5>
+                  <p class="card-text">Windows Server 2019 Administration</p>
+                  <a href="https://www.udemy.com/certificate/UC-d9e94034-e728-4d8c-8f24-00d4c67fc6f3/" target="_blank"
+                      class="btn btn-primary">Certificate link</a>
               </div>
           </div>
+      </div>
 
-          <!--Certifications start-->
-          <div class="container">
-
-            <h3 class="m-5 text-warning" id="Certifications">Certifications</h3>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
-                        <img src="/images/Certificates/AI.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Microsoft Certificate of Completion</h5>
-                            <p class="card-text">Career Essentials in Generative AI by Microsoft and LinkedIn</p>
-                            <a href="https://www.linkedin.com/learning/certificates/c9c1444db3700ebfc0d2f8c07f1d72381ffb97b5233d126688c592bc64b0b55d?u=2110905"target="_blank"
-                                class="btn btn-primary">Certificate link</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-sm-4">
-                    <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
-                        <img src="/images/Certificates/Excel.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Udemy Certificate of Completion </h5>
-                            <p class="card-text">Microsoft Excel - Excel from Beginner to Advanced </p>
-                            <a href="https://www.udemy.com/certificate/UC-de5dce73-a9c4-4cc6-bec7-a04905d2bbe7/" target="_blank"
-                                class="btn btn-primary">Certificate link</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-sm-4">
-                    <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
-                        <img src="/images/Certificates/Goldmen Sacs.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Goldman Sachs Certificate of Completion</h5>
-                            <p class="card-text">Goldman Sachs Engineering Job Simulation</p>
-                            <a href="https://www.linkedin.com/learning/certificates/c9c1444db3700ebfc0d2f8c07f1d72381ffb97b5233d126688c592bc64b0b55d?u=2110905" target="_blank"
-                                class="btn btn-primary">Certificate link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
-                        <img src="/images/Certificates/Server 2019.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Udemy Certificate of Completion</h5>
-                            <p class="card-text">Windows Server 2019 Administration</p>
-                            <a href="https://www.udemy.com/certificate/UC-d9e94034-e728-4d8c-8f24-00d4c67fc6f3/" target="_blank"
-                                class="btn btn-primary">Certificate link</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-sm-4">
-                    <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
-                        <img src="/images/Certificates/Phising.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">LinkedIn Learning Certificate of Completion</h5>
-                            <p class="card-text">Avoiding Phishing Scams</p>
-                            <a href="https://www.linkedin.com/learning/certificates/e801edb5a135754206cb604da472b760b88e9954b40c761279bdaa04d6f191bf?u=2110905" target="_blank"
-                                class="btn btn-primary">Certificate link</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
-                        <img src="/images/Certificates/Phising.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">LinkedIn Learning Certificate of Completion</h5>
-                            <p class="card-text">Avoiding Phishing Scams</p>
-                            <a href="https://www.linkedin.com/learning/certificates/e801edb5a135754206cb604da472b760b88e9954b40c761279bdaa04d6f191bf?u=2110905" target="_blank"
-                                class="btn btn-primary">Certificate link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="col-lg-4 col-sm-6">
+          <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
+              <img src="/images/Certificates/Phising.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">LinkedIn Learning Certificate of Completion</h5>
+                  <p class="card-text">Avoiding Phishing Scams</p>
+                  <a href="https://www.linkedin.com/learning/certificates/e801edb5a135754206cb604da472b760b88e9954b40c761279bdaa04d6f191bf?u=2110905" target="_blank"
+                      class="btn btn-primary">Certificate link</a>
+              </div>
           </div>
-        
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+          <div class="card bg-warning text-dark d-flex flex-column h-100 mb-3">
+              <img src="/images/Certificates/Phising.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">LinkedIn Learning Certificate of Completion</h5>
+                  <p class="card-text">Avoiding Phishing Scams</p>
+                  <a href="https://www.linkedin.com/learning/certificates/e801edb5a135754206cb604da472b760b88e9954b40c761279bdaa04d6f191bf?u=2110905" target="_blank"
+                      class="btn btn-primary">Certificate link</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 
-        <!--Certifications End-->
+
+<!--Certifications End-->
 
 
-          
-   <!--Skills End-->
+
+<!--Skills End-->
+
+
+  <!--All good-->
 
    <!--Projects-->
+   <div class="container-fluid">
+    <h3 class="m-5 text-warning" id="Projects">Projects</h3>
 
- <div class="container">
-  <h3 class="m-5 text-warning" id="Projects">Projects</h3>
-  <div class="row">
-    <h6 class="text-warning">Mini projects</h6>
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd image-fluid"  src="images/Projects/Drumkit.jpg" alt="" />
-        <p class="title ">Drum Kit</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="https://omkarvh.github.io/Drum-kit/" target="_blank"> Go To </a></div>
-      </div>
-    </div>
-  
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd" src="images/Projects/Dice.jpg" alt="" />
-        <p class="title ">Dice Game</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="https://omkarvh.github.io/Dice-game/" target="_blank"> Go To </a></div>
-      </div>
-    </div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd" src="images/Projects/Hostel.jpg" alt="" />
-        <p class="title ">Hostel Website</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="https://omkarvh.github.io/Hostel-Website/" target="_blank"> Go To </a></div>
-      </div>
-    </div>
-    </div>
-  </div>
-<!--2nd row-->
-<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-lg-4 position-relative">
+            <img src="images/Projects/Drumkit.jpg" class="img-thumbnail" alt="...">
+            <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);" onclick="window.open('https://omkarvh.github.io/Drum-kit/', '_blank');">
+                Visit project
+            </button>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 position-relative">
+            <img src="images/Projects/Dice.jpg" class="img-thumbnail" alt="...">
+            <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);"onclick="window.open('https://omkarvh.github.io/Dice-game/', '_blank')" >
 
-  <div class="row">
-   
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd image-fluid"  src="images/Projects/Simon.jpg" alt="" />
-        <p class="title ">Simon Game</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="https://omkarvh.github.io/Simon-Game/" target="_blank"> Go To </a></div>
-      </div>
-    </div>
-  
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd" src="images/Projects/Score Board.jpg" alt="" />
-        <p class="title">Score Board</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="#"> Go To </a></div>
-      </div>
+                Visit project
+            </button>
+        </div>
+        <div class="col-sm-6 col-lg-4 position-relative">
+            <img src="images/Projects/Hostel.jpg" class="img-thumbnail" alt="...">
+            <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);">
+                <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);"onclick="window.open('https://omkarvh.github.io/Hostel-Website/', '_blank')" >
+
+                Visit project
+            </button>
+        </div>
     </div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd" src="images/Projects/Jokes.jpg" alt="" />
-        <p class="title">Coming Soon...</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="#"> BUTTON </a></div>
-      </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-4 position-relative">
+            <img src="images/Projects/Simon.jpg" class="img-thumbnail" alt="...">
+            <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);"onclick ="window.open('https://omkarvh.github.io/Simon-Game/', '_blank')" >
+                Visit project
+            </button>
+        </div>
+        <div class="col-sm-6 col-lg-4 position-relative">
+            <img src="images/Projects/Score Board.jpg" class="img-thumbnail" alt="...">
+            <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);"onclick ="window.open('#, '_blank')" >
+
+                Visit project
+            </button>
+        </div>
+        <div class="col-sm-6 col-lg-4 position-relative">
+            <img src="images/Projects/Jokes.jpg" class="img-thumbnail" alt="...">
+            <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);">
+                <button class="btn btn-primary position-absolute" style="top: 80%; left: 70%; transform: translate(-50%, -50%);"onclick ="window.open('#', '_blank')" >
+
+                Visit project
+            </button>
+        </div>
     </div>
-    </div>
-  </div>
+</div>
 
 
 
-<!--3rd row-->
-
-<div class="container">
- 
-  <div class="row">
-    <h6 class="text-warning">Major projects</h6>
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd image-fluid"  src="images/Projects/Machine.jpg" alt="" />
-        <p class="title ">Virticulture (Machine Learning)</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="#"> Go To </a></div>
-      </div>
-    </div>
-  
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd" src="images/Projects/Ecommerce.jpg" alt="" />
-        <p class="title">Ecommerce</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="#"> BUTTON </a></div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="con">
-        <img class="crd" src="images/Projects/Jokes.jpg" alt="" />
-        <p class="title">Coming soon...</p>
-        <div class="overlay"></div>
-        <div class="button"><a href="#"> BUTTON </a></div>
-      </div>
-    </div>
-    </div>
-  </div>
-   
    <!--Projects End-->
 
-   <!--Education-->
+   <!--All Good-->
+     <!--Education-->
 
-   <div class="container">
-    <h3 class="m-5 text-warning" id="Education">Education</h3>
-     <div class="row text-center">
-      <div class=" col-sm-12 col-md-6 col-lg-6 d-inline-block">
-       <h5 class="m-5">Guru Nanak Dev Engineering College, Bidar KA - <span><i>VTU University</i></span></h5>
-       <img class="Edu-img" src="images\Education\University.jpg" alt="">
-       <h6>Computer Science Engineering</h6>
-       <p>(Completed in 2021, CGPA: 5.0)</p>
-
-      </div>
+     <div class="container-fluid">
+        <h3 class="m-5 text-warning" id="Education">Education</h3>
+         <div class="row text-center">
+          <div class=" col-sm-12 col-md-6 col-lg-6 d-inline-block">
+           <h5 class="m-5">Guru Nanak Dev Engineering College, Bidar KA - <span><i>VTU University</i></span></h5>
+           <img class="Edu-img img-fluid" src="images\Education\University.jpg" alt="">
+           <h6>Computer Science Engineering</h6>
+           <p>(Completed in 2021, CGPA: 5.0)</p>
+    
+          </div>
+           
+          <div class=" col-sm-12 col-md-6 col-lg-6 d-inline-block">
+            <h5 class="m-5">Sri Chaitanya Jr College, Hyderabad TG - <span><i>Pre-University (CBSE)</i></span></h5>
+            <img class="Edu-img img-fluid" src="images\Education\Pre university.jpeg" alt="">
+            <h6>M,P,C</h6>
+            <p>(Completed in 2015, CGPA: 91.8%)</p>
+     
+           </div>
+           <div class="row text-center">
+            <div class=" col-sm-12 col-md-12 col-lg-12 d-inline-block">
+              <h5 class="m-5">Guru Nanak Public School Bidar,KA - <span><i>Schooling (CBSE)</i></span></h5>
+              <img class="Edu-img img-fluid" src="images\Education\Schooling.jpg" alt="">
+              <h6>CBSE</h6>
+              <p>(Completed in 2013, CGPA: 7.4)</p>
        
-      <div class=" col-sm-12 col-md-6 col-lg-6 d-inline-block">
-        <h5 class="m-5">Sri Chaitanya Jr College, Hyderabad TG - <span><i>Pre-University (CBSE)</i></span></h5>
-        <img class="Edu-img" src="images\Education\Pre university.jpeg" alt="">
-        <h6>M,P,C</h6>
-        <p>(Completed in 2015, CGPA: 91.8%)</p>
- 
-       </div>
-       <div class="row text-center">
-        <div class=" col-sm-12 col-md-12 col-lg-12 d-inline-block">
-          <h5 class="m-5">Guru Nanak Public School Bidar,KA - <span><i>Schooling (CBSE)</i></span></h5>
-          <img class="Edu-img" src="images\Education\Schooling.jpg" alt="">
-          <h6>CBSE</h6>
-          <p>(Completed in 2013, CGPA: 7.4)</p>
-   
+             </div>
+           </div>
+         </div>
          </div>
        </div>
-     </div>
-     </div>
-   </div>
+    
+       <!--Education end-->
 
-   <!--Education end-->
-          
-<!--Contact Me-->
+       <!--All good-->
 
-<div class="container ">
-  <h3 class="m-5 text-warning" id="Contact">Contact Me</h3>
-
-  <div class="row">
-    <div class="col-lg-6">
-      <h5 class="text-warning">Find me on :</h5>
-      <!--Social media links-->
-      <ul class="Social ">
-        <li class="Social-li"><img class="Sli-img" src="images\Contact\linkedin.png" alt=""> <a  href="">LinkedIn</a></li>
-        <li class="Social-li"><img class="Sli-img" src="images\Contact\github.png" alt=""> <a href="">Github</a></li>
-        <li class="Social-li"><img class="Sli-img" src="images\Contact\twitter.png" alt=""> <a href="">Twitter</a></li>
-        <li class="Social-li"><img class="Sli-img" src="images\Contact\instagram.png" alt=""> <a href="">Instagram</a></li>
-        <li class="Social-li"><img class="Sli-img" src="images\Contact\facebook.png" alt=""> <a href="">Facebook</a></li>
-        <li class="Social-li"><img class="Sli-img" src="images\Contact\gmail.png" alt=""> <a href="">Gmail</a></li>
-
-      </ul>
-    </div>
-    <div class="col-lg-6 border">
-      <form id="myForm" action="send_email.php" method="post">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required>
+       <!--Contact Me-->
+<div class="container-fluid" id="Contact">
+    <div class="row">
+        <div class="col-sm-12 col-lg-12 col-md-12 text-center ">
+            <h1 class="text-warning">Get In Touch</h1>       
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="phone" class="form-label">Phone</label>
-          <input type="tel" class="form-control" id="phone" required pattern="[0-9]{10}">
-        </div>
-        <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
-      </form>
     </div>
 
-  </div>
-
+    <form class="row g-4 m-2" action="send_email.php" method="post">
+        <div class="col-sm-12 col-lg-6">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="name" id="name" required>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <input type="email" class="form-control" placeholder="Email" aria-label="Email" name="email" id="email" required>
+        </div>
+        <div class="col-sm-12 col-lg-12">
+            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Message" aria-label="Message" required></textarea>
+        </div>
+        <div class="col-lg-12 text-center">
+            <input class="btn btn-warning" type="submit" value="Submit">
+        </div>
+    </form>
+    
+   
 </div>
 
+<!--Contact me ends-->
 
-
-<!--Footer-->
-<div class="container">
-  <div class="row">
-      <div class="col-12">
-          <ul class="fotterUl d-flex justify-content-center">
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/html.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/css.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/Bootstrap.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/javascript.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/jquery.png" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/exp2.jpg" alt="">
-              </li>
-              <li class="IcnLi">
-                  <img class="icon-img" src="images/Profile pics/Icons/Node.png" alt="">
-              </li>
-          </ul>
+<footer>
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <ul class="fotterUl d-flex justify-content-center">
+                    <li class="IcnLi">
+                        <img class="icon-img img-fluid" src="images/Profile pics/Icons/html.png" alt="">
+                    </li>
+                    <li class="IcnLi">
+                        <img class="icon-img img-fluid" src="images/Profile pics/Icons/css.png" alt="">
+                    </li>
+                    <li class="IcnLi">
+                        <img class="icon-img img-fluid" src="images/Profile pics/Icons/Bootstrap.png" alt="">
+                    </li>
+                    <li class="IcnLi">
+                        <img class="icon-img img-fluid" src="images/Profile pics/Icons/javascript.png" alt="">
+                    </li>
+                    <li class="IcnLi">
+                        <img class="icon-img img-fluid" src="images/Profile pics/Icons/jquery.png" alt="">
+                    </li>
+                    <li class="IcnLi">
+                        <img class="icon-img img-fluid" src="images/Profile pics/Icons/exp2.jpg" alt="">
+                    </li>
+                    <li class="IcnLi">
+                        <img class="icon-img img-fluid" src="images/Profile pics/Icons/Node.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
       </div>
-  </div>
-</div>
+</footer>
 
 
+    
 
-<!--Footer Ends-->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-<!--Contact Me Ends-->
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="index.js"></script>
-
-
-
-
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
