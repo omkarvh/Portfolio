@@ -5,32 +5,33 @@ body{
     font-optical-sizing: auto;
 }
 
-
-
-
-.boxer{
-border-radius: 0px;
-background: #0c0b14;
-box-shadow:  20px 20px 60px #f0ad4e,
-             -20px -20px 60px #f0ad4e;
-
+.nav-im{
+  height: 35px;
+  background-color: #f0ad4e;
+  border-radius: 50%;
+  padding: 5px;
 }
 
+.ulli{
+  position: fixed;
+  top: 20%;
+  list-style: none;
+  z-index: 1;
+}
+
+.ulli li{
+  margin-top: 15px;
+}
 
 
 
 /*nav bar styling*/
-.navbar{
- 
- background: transparent;
- backdrop-filter: blur(10px);
-  font-size: larger;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  
-}
+
+
+
 .nav-link{
   color: #f0ad4e;
+ 
 }
 /*nav bar styling end*/
 
@@ -176,4 +177,31 @@ button:active {
 /*form*/
 
 .Fname{
+}
+
+.container span{
+  color: red; 
+}
+.container span::after{
+  content: '|';
+  animation-name: blinking; 
+  animation-duration: .71s; 
+  animation-iteration-count: infinite;
+}
+@keyframes blinking{
+  from{
+      color: transparent; 
+  }
+  to{
+      color: lightgrey; 
+  }
+}
+
+
+.boxer{
+  padding: 25px;
+  border-radius: 55px;
+background: #434242;
+box-shadow:  22px 22px 37px #1a1a1a,
+             -22px -22px 37px #666666;
 }

@@ -18,6 +18,9 @@
     <title>Portfolio</title>
   </head>
   <body>
+
+<!--nav bar style 
+
     <nav class="navbar navbar-expand-lg  fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand text-warning" href="#">Portfolio</a>
@@ -45,23 +48,46 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 <!--All good-->
 
-    <div class="container-fluid" style="margin-top: 80px;">
-        <div class="row  boxer">
+
+<!--nav bar style -->
+<nav class="navbar navbar-expand-lg  fixed-top">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="ulli">
+    <li class="lik  "><a class="link" href="#Home"><img class="nav-im" src="images\Navbar\home.png" alt="Home"></a></li>
+    <li class="lik"><a class="link" href="#Skills"><img class="nav-im" src="images\Navbar\skill.png" alt=""></a></li>
+    <li class="lik"><a class="link" href="#Certificate"><img class="nav-im" src="images\Navbar\certificate.png" alt=""></a></li>
+    <li class="lik"><a class="link" href="#Projects"><img class="nav-im" src="images\Navbar\project.png" alt=""></a></li>
+    <li class="lik"><a class="link" href="#Education"><img class="nav-im" src="images\Navbar\education.png" alt=""></a></li>
+    <li class="lik"><a class="link" href="#Contact"><img class="nav-im" src="images\Navbar\contact.png" alt=""></a></li>
+
+</ul>
+</div>
+</nav> 
+<!--All good-->
+
+    <div class="container-fluid" style="margin-top: 80px;" id="Home">
+        <div class="row ">
+
     
             <div class="col-sm-12 col-md-6 ">
-                <img class="img-fluid" src="images/Profile pics/p1.png" alt="">
+                <img class="img-fluid " src="images\Profile pics\p7.png" alt="">
             </div>
     
             <div class="col-sm-12 col-md-6 d-flex align-items-center Naming">
     
                 <span class="">
                 <h1 class=" text-warning">Hello,</h1>
-                <h2 class="Fname">I am <span class="text-warning">Omkar Hiremath</span></h2>
+                <h2 class="Fname">I am <span class="text-warning ">Omkar Hiremath</span></h2>
                 
-                <h3 class=""> <u class="text-warning">Full Stack Developer</u></h3>
+                <h3 class=""> <u class="text-warning"> &nbsp;<span typing-speed="70" typing-delay="1000" words="Full stack web developer,Web designer"></span></u></h3>
                 <p> Enthusiastic and results-driven IT professional with a solid background in system administration and a
                     newfound passion for web development. Proven commitment to continuous learning, adaptability in
                     dynamic work environments, and a track record of optimizing network performance and crafting user
@@ -78,7 +104,7 @@
 
     <!--Icons-->
 
-<div class="container-fluid d-flex justify-content-center">
+<div class="container-fluid d-flex justify-content-center" >
     <div class="row">
         <div class="col-12">
             <ul class="fotterUl d-flex justify-content-center">
@@ -194,7 +220,7 @@
 </div>
 
 <!--Certifications start-->
-<div class="container-fluid">
+<div class="container-fluid" id="Certificate">
 
   <h3 class="m-5 text-warning" id="Certifications">Certifications</h3>
   <div class="row">
@@ -385,7 +411,7 @@
        <!--All good-->
 
        <!--Contact Me-->
-<div class="container-fluid" id="Contact">
+<div class="container-fluid boxer" id="Contact">
     <div class="row">
         <div class="col-sm-12 col-lg-12 col-md-12 text-center ">
             <h1 class="text-warning">Get In Touch</h1>       
@@ -444,7 +470,44 @@
       </div>
 </footer>
 
+<script>
+    var wordsToType = document.querySelector("span[words]").getAttribute("words").split(','), 
+            typer =  document.querySelector("span[words]"), 
+            typingSpeed = (parseInt(typer.getAttribute('typing-speed')) || 70), 
+            typingDelay = (parseInt(typer.getAttribute('typing-delay')) || 700);
+    
+var currentWordIndex = 0, currentCharacterIndex = 0; 
 
+function type(){
+
+    var wordToType = wordsToType[currentWordIndex%wordsToType.length];
+
+    if(currentCharacterIndex < wordToType.length){
+        typer.innerHTML += wordToType[currentCharacterIndex++];
+        setTimeout(type, typingSpeed);
+    }else{
+
+        setTimeout(erase, typingDelay);
+    }
+
+}
+function erase(){
+    var wordToType = wordsToType[currentWordIndex%wordsToType.length]; 
+    if(currentCharacterIndex >0){
+        typer.innerHTML = wordToType.substr(0, --currentCharacterIndex -1);
+        setTimeout(erase, typingSpeed);
+    }else{
+
+        currentWordIndex++; 
+        setTimeout(type, typingDelay);
+    }
+
+}
+
+window.onload = function(){
+    type(); 
+}
+</script>
     
 
     <!-- Optional JavaScript; choose one of the two! -->
