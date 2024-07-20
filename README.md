@@ -1,7 +1,7 @@
 The profile is under construction 
 # Project Name
 
-![Project Image](https://example.com/path/to/image.jpg)
+![Project Image](https://github.com/omkarvh/Portfolio/blob/main/images/Projects/Blog.jpg?raw=true)
 
 ## Description
 
