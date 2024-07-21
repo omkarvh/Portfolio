@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    
+    background-color: #080707;
     color: aliceblue;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -15,35 +16,22 @@ body{
 .ulli{
   position: fixed;
   top: 20%;
+  left: 0;
+  right: 0;
   list-style: none;
   z-index: 1;
 }
 
 .ulli li{
-  margin-top: 15px;
+  margin-top: 25px;
 }
-
-
-
-/*nav bar styling*/
-
-
-
 .nav-link{
   color: #f0ad4e;
  
 }
-/*nav bar styling end*/
 
-/*button Hire*/
-/*.Hire{
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 10px;
-  padding: 10px;
-}
-/*button Hire ends*/
 
-button {
+.Hire{
   color: #f0ad4e;
   padding: 0.7em 1.7em;
   font-size: 18px;
@@ -55,98 +43,8 @@ button {
   box-shadow: 6px 6px 12px #f0ad4e, -6px -6px 12px #f0ad4e;
 }
 
-button:active {
-  color: #666;
-  box-shadow: inset 4px 4px 12px #ace99d, inset -4px -4px 12px #40db40;
-}
 
-/* icons list */
-.fotterUl{
-  list-style: none;
-}
-.IcnLi{
-  display: inline-block;
-  margin: 5px;   
-}
-.icon-img {
-  width: 35px; /* Adjust the width as needed */
-  height: 35px; /* Adjust the height as needed */
-}
-/* icons list End*/
 
-/* projects section */
-.con {
-    position: relative;
-    margin-top: 50px;
-    width: 500px;
-    height: 300px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.5s ease;
-  }
-  
-  .con:hover .overlay {
-    display: block;
-    background: rgba(0, 0, 0, .3);
-  }
-  
-  .crd {
-    position: absolute;
-    width: auto;
-    height: 250px;
-    left: 0;
-  }
-  
-  .title {
-    position: absolute;
-    width: 500px;
-    left:0;
-    top: 120px;
-   
-    font-weight: 700;
-    font-size: 30px;
-    
-    text-transform: uppercase;
-    color: white;
-    z-index: 1;
-    transition: top .5s ease;
-  }
-  
-  .con:hover .title {
-    top: 90px;
-  }
-  
-  .button {
-    position: absolute;
-    width: 500px;
-    left:0;
-    top: 180px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .35s ease;
-
-  }
-  
-  .button a {
-    width: 200px;
-    padding: 12px 48px;
-    text-align: center;
-    color: white;
-    border: solid 2px white;
-    z-index: 1;
-  }
-  
-  .con:hover .button {
-    opacity: 1;
-  }
-  /* projects section end */
   /*Education*/
   .Edu-img{
     height: 250px;
@@ -155,47 +53,15 @@ button:active {
   }
   /*Education Ends*/
 
-/*Contact*/
-.Social{
-  list-style: none;
- 
-}
-.Sli-img{
-  height: 35px;
-  margin: 10px;
-}
-.Social-li{
-  
-  padding: 10px;
-  display: inline-block;
 
-}
-.Social-li a{
-  color: aliceblue;
+/*Posts*/
+.post-img{
+  height: 200px;
+  width: auto;
+  border: 5px solid rgb(146, 111, 111);
 }
 
-/*form*/
 
-.Fname{
-}
-
-.container span{
-  color: red; 
-}
-.container span::after{
-  content: '|';
-  animation-name: blinking; 
-  animation-duration: .71s; 
-  animation-iteration-count: infinite;
-}
-@keyframes blinking{
-  from{
-      color: transparent; 
-  }
-  to{
-      color: lightgrey; 
-  }
-}
 
 
 .boxer{
@@ -205,3 +71,69 @@ background: #434242;
 box-shadow:  22px 22px 37px #1a1a1a,
              -22px -22px 37px #666666;
 }
+
+     /* Style for the video background */
+     .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      filter: blur(10px);
+  }
+
+  /* Make sure the content is above the video */
+  .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .Tech_icon {
+    
+    height: 100px;
+    width: auto;
+    border-radius: 5%;
+    box-shadow: 0px 10px 30px #f0ad4e; /* Adjust the values as needed */
+  }
+  .icon-ig2{
+    height: 55px;
+    width: auto;
+  }
+
+
+.cn{
+   padding: 20px;
+  }
+.rw{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cl{
+   display: flex;
+  flex-direction: column;
+}
+  .projects {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .projects-img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+
+
+
+
+
