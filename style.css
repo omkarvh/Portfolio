@@ -1,0 +1,167 @@
+body{
+    
+    background-color: #080707;
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.Hire{
+  color: #f0ad4e;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #050404;
+  cursor: pointer;
+  border: 1px solid #030303;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #f0ad4e, -6px -6px 12px #f0ad4e;
+}
+
+/*Posts*/
+.post-img{
+  height: 200px;
+  width: auto;
+  border: 5px solid rgb(146, 111, 111);
+}
+
+
+
+
+.boxer{
+  padding: 25px;
+  border-radius: 55px;
+background: #434242;
+box-shadow:  22px 22px 37px #1a1a1a,
+             -22px -22px 37px #666666;
+}
+
+     /* Style for the video background */
+     .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      filter: blur(10px);
+  }
+
+  /* Make sure the content is above the video */
+  .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .Tech_icon {
+    
+    height: 100px;
+    width: auto;
+    border-radius: 5%;
+    box-shadow: 0px 10px 30px #f0ad4e; /* Adjust the values as needed */
+  }
+  .icon-ig2{
+    height: 55px;
+    width: auto;
+  }
+
+
+.cn{
+   padding: 20px;
+  }
+.rw{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cl{
+   display: flex;
+  flex-direction: column;
+}
+  .projects {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .projects-img {
+    width: 100%;
+    height: auto;
+  }
+
+/* new education */
+
+.circle{
+  height: 150px;
+  width: 150px;  
+  border: 5px solid white;
+  
+}
+
+.Cert-img{
+  height: 350px;
+  width: 350px;
+  border: 5px solid #f0ad4e;
+  
+}
+
+.carousel-caption{
+  color: #f0ad4e;
+  text-shadow: 2px 0px 2px rgb(236, 245, 232);
+  font-weight: 900;
+}
+
+/* experiment place */
+/* Responsive font sizes */
+.responsive-text {
+  font-size: 1rem; /* Default font size */
+}
+
+/* Small screens */
+@media (max-width: 767.98px) {
+  .responsive-text {
+    font-size: 1rem; /* Smaller font size for small screens */
+    font-weight:bold; /* Make it bold like <strong> */
+  }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .responsive-text {
+    font-size: 1.25rem; /* Larger font size for large screens */
+    font-weight: normal; /* Regular weight */
+  }
+}
+
+/*New nav bar */
+
+header[role="banner"] {
+  #logo-main {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+#navbar-primary.navbar-default {
+  background: transparent;
+  border: none;
+  .navbar-nav { 
+    width: 100%;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    }
+  }
+}
+
+
+
+
