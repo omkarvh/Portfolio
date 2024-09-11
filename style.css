@@ -265,6 +265,9 @@ box-shadow:  20px 20px 60px #f0ad4e,
       color: lightgrey; 
   }
 }
+.Poster{
+  filter: drop-shadow(1px 1px 20px #f0ad4e);
+}
 
 
 
