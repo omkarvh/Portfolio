@@ -112,7 +112,100 @@ document.querySelectorAll('.count').forEach(function (element) {
 });
 
 */
-// Define your project object
+
+const skills = [
+  { img: "images/Profile pics/Icons/html.png", alt: "HTML" },
+  { img: "images/Profile pics/Icons/css.png", alt: "CSS5" },
+  { img: "images/Profile pics/Icons/Bootstrap.png", alt: "Bootstrap 5" },
+  { img: "images/Profile pics/Icons/javascript.png", alt: "JavaScript" },
+  { img: "images/Profile pics/Icons/Jquery.png", alt: "jQuery" },
+  { img: "images/Profile pics/Icons/react.png", alt: "React.js" },
+  { img: "images/Profile pics/Icons/Node.png", alt: "Node.js" },
+  { img: "images/Profile pics/Icons/express.png", alt: "Express.js" },
+  { img: "images/Profile pics/Icons/git.png", alt: "Git" },
+  { img: "images/Profile pics/Icons/java.png", alt: "java" },
+  { img: "images/Profile pics/Icons/postgre.png", alt: "sql" },
+  { img: "images/Profile pics/Icons/canva.png", alt: "Canva" }
+];
+
+function SkillCard(skill) {
+  return `
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center m-2 d-flex justify-content-center align-items-center Tech_icon">
+   
+      <img class="icon-ig2" src="${skill.img}" alt="${skill.alt}" style="max-width: 100px; height: auto;">
+     
+      
+    </div>
+  `;
+}
+
+function displaySkills() {
+  const boxer = document.getElementById("skill");
+  boxer.innerHTML = skills.map(SkillCard).join('');
+}
+
+// Call the function to display the skills
+displaySkills();
+
+
+
+
+
+
+
+
+const certificates = [
+  {
+    img: "images/Certificates/AI.png",
+    Certificate_id: "Certificate ID: c9c1444db3700ebfc0d2f8c07f1d72381ffb97b5233d126688c592bc64b0b55d"
+  },
+  {
+    img: "images/Certificates/Goldmen Sacs.png",
+    Certificate_id: "Certificate ID: fWgabQnn4YGNfehpS"
+  },
+  {
+    img: "images/Certificates/MS900.png",
+    Certificate_id: "Certificate ID: BCC3D8-3DE0B5"
+  },
+  {
+    img: "images/Certificates/phising.png",
+    Certificate_id: "Certificate ID: BCC3D8-3DE0B5"
+  },
+  {
+    img: "images/Certificates/Server.png",
+    Certificate_id: "Certificate ID: BCC3D8-3DE0B5"
+  }
+];
+
+
+function createCarousel(certificate, index) {
+  return `
+    <div class="carousel-item ${index === 0 ? 'active' : ''} text-center">
+      <img class="Cert-img" src="${certificate.img}" class="d-block " alt="Certificate Image">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Certificate Number</h5>
+        <p>${certificate.Certificate_id}</p>
+      </div>
+    </div>
+  `;
+}
+
+// Function to insert all carousel items into the container
+function displayCertificates(certificates) {
+  const container = document.querySelector('.carousel-inner');
+  container.innerHTML = certificates.map(createCarousel).join('');
+}
+
+// Call the function to display the certificates
+displayCertificates(certificates);
+
+
+
+
+
+
+
+
 // Define an array of project objects
 const projects = [
   {
@@ -160,16 +253,16 @@ const projects = [
 function createCard(project) {
   return `
     <div class="col-md-6 col-lg-4 mb-3">
-      <div class="card bg-warning" style="max-width: 540px;">
+      <div class="card bg-dark border border-warning" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="${project.img}" class="img-fluid rounded-start" alt="${project.title}">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title text-dark">${project.title}</h5>
-              <p class="card-text text-dark">${project.desc}</p>
-              <a href="${project.link}" class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">Visit</a>
+              <h5 class="card-title text-warning">${project.title}</h5>
+              <p class="card-text text-warning">${project.desc}</p>
+              <a href="${project.link}" class="btn btn-outline-warning" target="_blank" rel="noopener noreferrer">Visit</a>
             </div>
           </div>
         </div>
